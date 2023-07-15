@@ -1,8 +1,13 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Space_Mono, EB_Garamond } from 'next/font/google';
+import { NavBar } from 'components';
 
-const inter = Inter({ subsets: ['latin'] });
+const spaceMono = Space_Mono({ subsets: ['latin'], weight: ['400', '700'] });
+export const EBGaramond = EB_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={`${spaceMono.className} bg-light`}>
+        <div className='flex w-full overflow-hidden h-screen items-start justify-between'>
+          <NavBar />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
