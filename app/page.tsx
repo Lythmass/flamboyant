@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className='w-full h-full overflow-y-auto overflow-x-hidden'>
-      <h1 className='text-[10rem]'>Hello World</h1>
+    <main className='px-10 w-full h-full overflow-y-auto overflow-x-hidden'>
+      <h1 className='text-lg'>Hello World</h1>
     </main>
   );
 }
