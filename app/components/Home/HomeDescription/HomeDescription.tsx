@@ -1,4 +1,4 @@
-import { fontSecondary } from 'layout';
+import { fontSecondary } from 'fonts';
 import { ContactMeButton, HomeDescriptionTypeAnimation } from 'components';
 
 export const HomeDescription = () => {

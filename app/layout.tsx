@@ -1,13 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Ubuntu_Mono, Source_Code_Pro } from 'next/font/google';
+import { fontMain } from 'fonts';
 import { NavBar } from 'components';
-
-const fontMain = Ubuntu_Mono({ subsets: ['latin'], weight: ['400', '700'] });
-export const fontSecondary = Source_Code_Pro({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
