@@ -1,9 +1,17 @@
+'use client';
 import { fontSecondary } from 'fonts';
 import { ContactMeButton, HomeDescriptionTypeAnimation } from 'components';
+import { motion } from 'framer-motion';
 
 export const HomeDescription = () => {
   return (
-    <div className='w-[70%] text-dark flex flex-col justify-center items-start gap-10 '>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1, type: 'spring' }}
+      className='w-[70%] text-dark flex flex-col justify-center items-start gap-10 '
+    >
       <h1 className='text-3xl '>
         <span className='text-accent-1'>Gigi</span> Lapachishvili
       </h1>
@@ -14,7 +22,7 @@ export const HomeDescription = () => {
         <HomeDescriptionTypeAnimation />
       </p>
       <ContactMeButton />
-    </div>
+    </motion.div>
   );
 };
 
