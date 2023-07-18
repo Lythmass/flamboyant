@@ -6,3 +6,10 @@ export {
   HomeExperience,
 } from './Home';
 export { ContactMeButton, NavBarButton } from './Global';
+export {
+  HomeSvg,
+  AboutSvg,
+  ProjectsSvg,
+  ServicesSvg,
+  ContactSvg,
+} from './Svgs';
