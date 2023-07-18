@@ -9,7 +9,7 @@ export const HomeDescription = () => {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 1, type: 'spring' }}
+      transition={{ duration: 1.25, type: 'spring' }}
       className='w-full xl:w-[70%] text-dark flex flex-col justify-center items-start gap-3 md:gap-10 '
     >
       <h1 className='text-2xl'>
