@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --navbar-length: 15rem;
+  --navbar-length: 20rem;
   --accent-1: #E96479;
   --accent-2: #7DB9B6;
   --light: #F2E7D5;
@@ -18,7 +18,10 @@ body{
 }
 
 .boxes {
-  background: linear-gradient(45deg, #E96479 25%, transparent 25%), linear-gradient(315deg, #E96479 25%, transparent 25%),linear-gradient(45deg, transparent 24%,#e0576c 25%, #e0576c 45%, transparent 45%), linear-gradient(315deg, transparent 24%,#e0576c 25%, #e0576c 45%, transparent 45%);
+  background: linear-gradient(45deg, var(--accent-1) 25%, transparent 25%), 
+  linear-gradient(315deg, #E96479 25%, transparent 25%),
+  linear-gradient(45deg, transparent 24%,#e0576c 25%, #e0576c 45%, transparent 45%), 
+  linear-gradient(315deg, transparent 24%,#e0576c 25%, #e0576c 45%, transparent 45%);
   background-size: 3em 3em;
-  background-color: #E96479;
+  background-color: var(--accent-1);
 }

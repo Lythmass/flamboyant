@@ -16,7 +16,7 @@ export const Home = () => {
     );
   });
   return (
-    <div className='w-full flex flex-col items-start justify-start h-full gap-16'>
+    <div className='w-full flex flex-col items-start justify-start h-full gap-8 md:gap-16'>
       <HomeDescription />
       <motion.div
         initial={{ opacity: 0, y: 100 }}
