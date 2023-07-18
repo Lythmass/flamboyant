@@ -13,7 +13,8 @@ export const HomeDescription = () => {
       className='w-full xl:w-[70%] text-dark flex flex-col justify-center items-start gap-3 md:gap-10 '
     >
       <h1 className='text-2xl'>
-        <span className='text-accent-1'>Gigi</span> Lapachishvili
+        <span className='text-accent-1'>Gigi</span> <br />
+        Lapachishvili
       </h1>
       <h1
         className={`text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium ${fontSecondary.className}`}

@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { fontMain } from 'fonts';
-import { NavBar } from 'components';
+import { NavBar, NavBarButton } from 'components';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,6 +17,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${fontMain.className} bg-light`}>
         <div className='flex w-full overflow-hidden h-screen items-start justify-between'>
+          <NavBarButton />
           <NavBar />
           {children}
         </div>

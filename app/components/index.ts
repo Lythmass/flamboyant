@@ -5,4 +5,4 @@ export {
   HomeDescriptionTypeAnimation,
   HomeExperience,
 } from './Home';
-export { ContactMeButton } from './Global';
+export { ContactMeButton, NavBarButton } from './Global';
