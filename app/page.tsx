@@ -1,7 +1,9 @@
-export default function Home() {
+import { Home } from 'components';
+
+export default function Main() {
   return (
-    <main className='px-10 w-full h-full overflow-y-auto overflow-x-hidden'>
-      <h1 className='text-lg'>Hello World</h1>
+    <main className='py-32 pl-32 w-full h-full overflow-y-auto overflow-x-hidden'>
+      <Home />
     </main>
   );
 }

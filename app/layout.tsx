@@ -1,12 +1,12 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Space_Mono, EB_Garamond } from 'next/font/google';
+import { Ubuntu_Mono, Source_Code_Pro } from 'next/font/google';
 import { NavBar } from 'components';
 
-const spaceMono = Space_Mono({ subsets: ['latin'], weight: ['400', '700'] });
-export const EBGaramond = EB_Garamond({
+const fontMain = Ubuntu_Mono({ subsets: ['latin'], weight: ['400', '700'] });
+export const fontSecondary = Source_Code_Pro({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${spaceMono.className} bg-light`}>
+      <body className={`${fontMain.className} bg-light`}>
         <div className='flex w-full overflow-hidden h-screen items-start justify-between'>
           <NavBar />
           {children}
