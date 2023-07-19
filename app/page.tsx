@@ -1,9 +1,10 @@
-import { Home } from 'components';
+import { About, Home } from 'components';
 
 export default function Main() {
   return (
-    <main className='lg:py-24 py-12 px-10 xl:pl-32 w-full h-full overflow-y-auto overflow-x-hidden'>
+    <main className='w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth'>
       <Home />
+      <About />
     </main>
   );
 }

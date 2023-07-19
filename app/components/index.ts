@@ -13,3 +13,4 @@ export {
   ServicesSvg,
   ContactSvg,
 } from './Svgs';
+export { About } from './About';
