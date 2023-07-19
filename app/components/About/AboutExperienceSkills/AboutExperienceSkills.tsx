@@ -7,7 +7,7 @@ export const AboutExperienceSkills: React.FC<SkillType> = (props) => {
   return (
     <div
       content={props.yearsOfExperience}
-      className={`${fontSecondary.className} font-medium ${before} bg-dark relative cursor-default overflow-hidden px-6 text-center py-1 text-light text-lg`}
+      className={`${fontSecondary.className} font-medium ${before} bg-dark relative cursor-default overflow-hidden px-6 text-center py-1 text-light xl:text-lg`}
     >
       {props.skill}
     </div>
