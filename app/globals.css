@@ -25,3 +25,75 @@ body{
   background-size: 3em 3em;
   background-color: var(--accent-1);
 }
+
+.colorful {
+  --c: linear-gradient(90deg, var(--accent-1) 25%, var(--accent-2) 0 50%, var(--light) 0 75%, var(--accent-1) 0);
+}
+
+colorful:before,
+.colorful:after {
+   content: "";
+   flex: 1;
+   background: var(--c), var(--c), var(--c), var(--c);
+   background-size: 400% 26%;
+   background-repeat: no-repeat;
+   animation: colorful-0cr5ij 2s infinite;
+}
+
+.colorful:after {
+   transform: scaleX(-1);
+}
+
+@keyframes colorful-0cr5ij {
+   0% {
+      background-position: 100% 0%,100% 33.33%,100% 66.66%,100% 100%;
+   }
+
+   8.33% {
+      background-position: 66.66% 0%,100% 33.33%,100% 66.66%,100% 100%;
+   }
+
+   16.67% {
+      background-position: 66.66% 0%,66.66% 33.33%,100% 66.66%,100% 100%;
+   }
+
+   25% {
+      background-position: 66.66% 0%,66.66% 33.33%,66.66% 66.66%,100% 100%;
+   }
+
+   30%, 33.33% {
+      background-position: 66.66% 0%,66.66% 33.33%,66.66% 66.66%,66.66% 100%;
+   }
+
+   41.67% {
+      background-position: 33.33% 0%,66.66% 33.33%,66.66% 66.66%,66.66% 100%;
+   }
+
+   50% {
+      background-position: 33.33% 0%,33.33% 33.33%,66.66% 66.66%,66.66% 100%;
+   }
+
+   58.33% {
+      background-position: 33.33% 0%,33.33% 33.33%,33.33% 66.66%,66.66% 100%;
+   }
+
+   63%, 66.67% {
+      background-position: 33.33% 0%,33.33% 33.33%,33.33% 66.66%,33.33% 100%;
+   }
+
+   75% {
+      background-position: 0% 0%,33.33% 33.33%,33.33% 66.66%,33.33% 100%;
+   }
+
+   83.33% {
+      background-position: 0% 0%,0% 33.33%,33.33% 66.66%,33.33% 100%;
+   }
+
+   91.67% {
+      background-position: 0% 0%,0% 33.33%,0% 66.66%,33.33% 100%;
+   }
+
+   97%, 100% {
+      background-position: 0% 0%,0% 33.33%,0% 66.66%,0% 100%;
+   }
+}

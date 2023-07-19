@@ -1,0 +1,1 @@
+export { AboutExperienceSkillsData } from './AboutExperienceSkillsData';
