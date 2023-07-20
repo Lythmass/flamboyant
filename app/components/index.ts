@@ -24,3 +24,11 @@ export {
   AboutExperience,
   AboutExperienceSkills,
 } from './About';
+
+export {
+  Projects,
+  Project,
+  ProjectDescription,
+  ProjectDetails,
+  DisplayProjects,
+} from './Projects';
