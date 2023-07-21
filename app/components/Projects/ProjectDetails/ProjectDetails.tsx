@@ -13,11 +13,11 @@ export const ProjectDetails: React.FC<ProjectDetailsType> = (props) => {
         </h1>
       </div>
       <a
-        className='w-full flex items-center text-lg text-dark font-bold hover:shadow-[0_0_var(--dark)] hover:translate-x-[0.4rem] hover:translate-y-[0.4rem] transition-all shadow-[0.4rem_0.4rem_var(--dark)] bg-accent-2 py-2 px-3'
+        className='w-full flex gap-3 items-center lg:text-lg text-dark font-bold hover:shadow-[0_0_var(--dark)] hover:translate-x-[0.4rem] hover:translate-y-[0.4rem] transition-all shadow-[0.4rem_0.4rem_var(--dark)] bg-accent-2 py-2 px-3'
         href={props.link}
         target='_blank'
       >
-        <h1 className='w-1/2'>Open Project</h1>
+        <h1 className='w-1/2 whitespace-nowrap'>Open Project</h1>
         <ArrowSvg width={1000} height={30} color='var(--dark)' />
       </a>
     </div>
