@@ -34,4 +34,4 @@ export {
   DisplayProjects,
 } from './Projects';
 
-export { Services, DisplayServices, Service } from './Services';
+export { Services, DisplayServices, Service, ServiceWrapper } from './Services';
