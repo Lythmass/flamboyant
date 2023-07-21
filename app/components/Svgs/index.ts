@@ -3,3 +3,4 @@ export { AboutSvg } from './AboutSvg';
 export { ProjectsSvg } from './ProjectsSvg';
 export { ServicesSvg } from './ServicesSvg';
 export { ContactSvg } from './ContactSvg';
+export { ArrowSvg } from './ArrowSvg';

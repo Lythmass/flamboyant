@@ -15,6 +15,7 @@ export {
   ProjectsSvg,
   ServicesSvg,
   ContactSvg,
+  ArrowSvg,
 } from './Svgs';
 
 export {
