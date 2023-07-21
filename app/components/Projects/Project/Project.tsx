@@ -4,7 +4,7 @@ import { ProjectType } from 'types';
 
 export const Project: React.FC<ProjectType> = (props) => {
   return (
-    <div className='w-full relative boxes shadow-[0.4rem_0.4rem_var(--dark)] p-7 border-2 border-dark min-h-[35rem] pb-5 flex flex-col lg:flex-row items-start gap-10 lg:gap-0'>
+    <div className='w-full boxes shadow-[0.4rem_0.4rem_var(--dark)] p-7 border-2 border-dark pb-5 flex flex-col lg:flex-row items-start gap-10 lg:gap-0'>
       <div className='w-full lg:w-1/2 min-h-[31rem] flex flex-col items-start gap-1'>
         <ProjectDescription
           technologies={props.technologies}
