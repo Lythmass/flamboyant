@@ -14,7 +14,7 @@ export const ProjectDescription: React.FC<ProjectDescriptionType> = (props) => {
       </h1>
       <hr className='w-full my-4 border-dark border-[0.12rem]' />
       <p
-        className={`${fontSecondary.className} min-h-[16rem] mb-4 bg-dark text-light p-4 lg:text-lg shadow-[0.4rem_0.4rem_var(--light)]`}
+        className={`${fontSecondary.className} min-h-[16rem] mb-4 bg-dark text-light p-4 text-lg shadow-[0.4rem_0.4rem_var(--light)]`}
       >
         {props.description}
       </p>
