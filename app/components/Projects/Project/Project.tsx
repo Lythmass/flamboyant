@@ -26,7 +26,7 @@ export const Project: React.FC<ProjectType> = (props) => {
         />
       </div>
       <Image
-        className='w-full self-end lg:w-1/2 lg:pl-10 min-h-[31.3rem] object-cover'
+        className='w-full self-end lg:w-1/2 lg:pl-10 sm:min-h-[31.3rem] object-cover'
         src={props.image}
         width={1400}
         height={700}
