@@ -5,7 +5,7 @@ import { ProjectType } from 'types';
 export const Project: React.FC<ProjectType> = (props) => {
   return (
     <div className='w-full boxes shadow-[0.4rem_0.4rem_var(--dark)] p-7 border-2 border-dark min-h-[35rem] pb-5 flex items-start gap-16'>
-      <div className='w-full min-h-[31rem] flex flex-col items-start gap-1'>
+      <div className='w-1/2 min-h-[31rem] flex flex-col items-start gap-1'>
         <ProjectDescription
           technologies={props.technologies}
           title={props.title}
@@ -18,7 +18,7 @@ export const Project: React.FC<ProjectType> = (props) => {
         />
       </div>
       <Image
-        className='w-full min-h-[31.3rem] object-cover'
+        className='w-1/2 min-h-[31.3rem] object-cover'
         src={props.image}
         width={1400}
         height={700}
