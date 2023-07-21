@@ -33,3 +33,5 @@ export {
   ProjectDetails,
   DisplayProjects,
 } from './Projects';
+
+export { Services, DisplayServices, Service } from './Services';

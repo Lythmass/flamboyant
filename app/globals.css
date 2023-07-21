@@ -97,3 +97,167 @@ colorful:before,
       background-position: 0% 0%,0% 33.33%,0% 66.66%,0% 100%;
    }
 }
+
+.shapes {
+   width: 2.5rem;
+   height: 1.25rem;
+   background-color: var(--dark);
+   animation: shapes-9nkw4omd 1.5s infinite linear;
+}
+
+.shapes:before,
+.shapes:after {
+   content: "";
+   position: absolute;
+   background: inherit;
+   bottom: 100%;
+   width: 50%;
+   height: 100%;
+   animation: inherit;
+   animation-name: shapes-r89hlomd;
+}
+
+.shapes:before {
+   left: 0;
+   --s: -1,1;
+}
+
+.shapes:after {
+   right: 0;
+}
+
+@keyframes shapes-9nkw4omd {
+   0%, 30% {
+      transform: translateY(0)     scaleY(1);
+   }
+
+   49.99% {
+      transform: translateY(-50%)  scaleY(1);
+   }
+
+   50% {
+      transform: translateY(-50%)  scaleY(-1);
+   }
+
+   70%, 100% {
+      transform: translateY(-100%) scaleY(-1);
+   }
+}
+
+@keyframes shapes-r89hlomd {
+   0%, 10%, 90%, 100% {
+      transform: scale(var(--s,1)) translate(0);
+   }
+
+   30%, 70% {
+      transform: scale(var(--s,1)) translate(22.4px);
+   }
+
+   50% {
+      transform: scale(var(--s,1)) translate(22.4px,22.4px);
+   }
+}
+
+.pulse {
+   position: relative;
+   width: 2.5rem;
+   height: 2.5rem;
+}
+
+.pulse:before {
+   animation: pulse-u9v30vmd 1.5s infinite;
+   display: block;
+   content: '';
+   height: 100%;
+   width: 100%;
+   border: 6.7px solid var(--dark);
+   border-radius: 50%;
+}
+
+@keyframes pulse-u9v30vmd {
+   0%, 40% {
+      border-width: 1.25rem;
+   }
+
+   60% {
+      border-color: var(--dark);
+      border-width: 6.7px;
+      opacity: 1;
+      transform: scale(1);
+   }
+
+   100% {
+      border-color: var(--dark);
+      opacity: 0;
+      transform: scale(2);
+   }
+}
+
+.shapes-circle {
+   width: 2.5rem;
+   height: 2.5rem;
+   color: var(--dark);
+   position: relative;
+   background: radial-gradient(11.2px,currentColor 94%,#0000);
+}
+
+.shapes-circle:before {
+   content: '';
+   position: absolute;
+   inset: 0;
+   border-radius: 50%;
+   background: radial-gradient(10.08px at bottom right,#0000 94%,currentColor) top    left,
+          radial-gradient(10.08px at bottom left ,#0000 94%,currentColor) top    right,
+          radial-gradient(10.08px at top    right,#0000 94%,currentColor) bottom left,
+          radial-gradient(10.08px at top    left ,#0000 94%,currentColor) bottom right;
+   background-size: 22.4px 22.4px;
+   background-repeat: no-repeat;
+   animation: shapes-77ngqcmd 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+
+@keyframes shapes-77ngqcmd {
+   33% {
+      inset: -11.2px;
+      transform: rotate(0deg);
+   }
+
+   66% {
+      inset: -11.2px;
+      transform: rotate(90deg);
+   }
+
+   100% {
+      inset: 0;
+      transform: rotate(90deg);
+   }
+}
+
+.bars {
+   width: 2.5rem;
+   height:  2.5rem;
+   --c: linear-gradient(var(--dark) 0 0);
+   background: var(--c), var(--c), var(--c);
+   background-repeat: no-repeat;
+   animation: bars-4tzcsomd 1s infinite,
+          bars-d0g8gh 1s infinite;
+}
+
+@keyframes bars-4tzcsomd {
+   0%, 100% {
+      background-size: 10.1px 100%;
+   }
+
+   33%, 66% {
+      background-size: 10.1px 10.1px;
+   }
+}
+
+@keyframes bars-d0g8gh {
+   0%, 33% {
+      background-position: 0    0,50% 50%,100% 100%;
+   }
+
+   66%, 100% {
+      background-position: 100% 0,50% 50%,0    100%;
+   }
+}

@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export const Project: React.FC<ProjectType> = (props) => {
   return (
     <motion.div
-      initial={{ opacity: 1, y: 300 }}
+      initial={{ opacity: 1, y: 150 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: 0.1, duration: 1.25, type: 'spring' }}
