@@ -35,3 +35,5 @@ export {
 } from './Projects';
 
 export { Services, DisplayServices, Service, ServiceWrapper } from './Services';
+
+export { Contact } from './Contact';
