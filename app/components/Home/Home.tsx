@@ -21,7 +21,6 @@ export const Home = () => {
       <HomeDescription />
       <div className='w-full min-h-[20rem] flex gap-10 flex-wrap'>
         {displayExp}
-        <hr className='h-[1rem] bg-transparent border-none w-full' />
       </div>
     </div>
   );

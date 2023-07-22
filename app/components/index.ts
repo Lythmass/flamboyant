@@ -36,4 +36,4 @@ export {
 
 export { Services, DisplayServices, Service, ServiceWrapper } from './Services';
 
-export { Contact } from './Contact';
+export { Contact, ContactForm, ContactInfo, ContactFormInput } from './Contact';

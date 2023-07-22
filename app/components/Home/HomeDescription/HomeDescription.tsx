@@ -2,6 +2,7 @@
 import { fontSecondary } from 'fonts';
 import { ContactMeButton, HomeDescriptionTypeAnimation } from 'components';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export const HomeDescription = () => {
   return (
@@ -22,7 +23,9 @@ export const HomeDescription = () => {
       >
         <HomeDescriptionTypeAnimation />
       </p>
-      <ContactMeButton />
+      <ContactMeButton>
+        <Link href='#contact'>Reach out to me!</Link>
+      </ContactMeButton>
     </motion.div>
   );
 };
