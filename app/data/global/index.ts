@@ -1,1 +1,1 @@
-export { SocialsData } from './SocialsData.ts';
+export { SocialsData } from './SocialsData';
