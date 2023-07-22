@@ -4,3 +4,8 @@ export { ProjectsSvg } from './ProjectsSvg';
 export { ServicesSvg } from './ServicesSvg';
 export { ContactSvg } from './ContactSvg';
 export { ArrowSvg } from './ArrowSvg';
+export { FacebookSvg } from './FacebookSvg';
+export { InstagramSvg } from './InstagramSvg';
+export { TwitterSvg } from './TwitterSvg';
+export { GithubSvg } from './GithubSvg';
+export { LinkedinSvg } from './LinkedinSvg';

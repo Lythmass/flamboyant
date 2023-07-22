@@ -9,7 +9,7 @@ export const ContactForm = () => {
       onSubmit={handleSubmit(submitHandler)}
       className='w-full flex flex-col gap-7'
     >
-      <div className='flex gap-4 w-full flex-col'>
+      <div className='flex gap-4 w-full'>
         <ContactFormInput
           label='Name'
           placeholder='John'
@@ -43,11 +43,13 @@ export const ContactForm = () => {
         register={register}
         errors={errors['message']?.message}
       />
-      <ContactMeButton>
-        <button className='w-full' type='submit'>
-          Submit
-        </button>
-      </ContactMeButton>
+      <div className='w-full mt-2'>
+        <ContactMeButton>
+          <button className='w-full' type='submit'>
+            Submit
+          </button>
+        </ContactMeButton>
+      </div>
     </form>
   );
 };

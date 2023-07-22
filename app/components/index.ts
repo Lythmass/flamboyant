@@ -7,7 +7,7 @@ export {
   HomeExperience,
 } from './Home';
 
-export { ContactMeButton, NavBarButton, SectionTitle } from './Global';
+export { ContactMeButton, NavBarButton, SectionTitle, Socials } from './Global';
 
 export {
   HomeSvg,
@@ -16,6 +16,11 @@ export {
   ServicesSvg,
   ContactSvg,
   ArrowSvg,
+  FacebookSvg,
+  InstagramSvg,
+  TwitterSvg,
+  GithubSvg,
+  LinkedinSvg,
 } from './Svgs';
 
 export {

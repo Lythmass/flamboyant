@@ -37,12 +37,13 @@ export const DisplayProjects = () => {
           dynamicBullets: true,
         }}
         effect={'creative'}
+        grabCursor={true}
         loop
         modules={[Pagination, EffectCreative]}
         creativeEffect={{
           prev: {
             shadow: true,
-            translate: ['-100%', 0, -1],
+            translate: ['-20%', 0, -1],
           },
           next: {
             translate: ['100%', 0, 0],

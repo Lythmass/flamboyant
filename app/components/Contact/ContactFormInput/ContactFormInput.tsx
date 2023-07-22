@@ -22,6 +22,7 @@ export const ContactFormInput: React.FC<InputType> = (props) => {
         <textarea
           {...props.register(props.name, FormValidation[props.name])}
           id={props.name}
+          placeholder={props.placeholder}
           className={`w-full h-[10rem] py-2 ${fontSecondary.className} text-xl px-3 bg-light border-2 border-dark focus:shadow-[0.4rem_0.4rem_var(--accent-1)] focus:outline-none text-dark font-semibold transition-all`}
         />
       )}
