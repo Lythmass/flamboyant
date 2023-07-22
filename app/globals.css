@@ -261,3 +261,7 @@ colorful:before,
       background-position: 100% 0,50% 50%,0    100%;
    }
 }
+
+.swiper-pagination-bullet-active {
+   background-color: var(--dark) !important;
+ }
