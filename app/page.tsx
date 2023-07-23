@@ -8,6 +8,9 @@ export default function Main() {
       <Projects />
       <Services />
       <Contact />
+      <footer className='w-full bg-dark h-[9rem] p-7'>
+        <h1 className='text-accent-1 text-3xl font-bold'>Copyright Lythmass</h1>
+      </footer>
     </main>
   );
 }
