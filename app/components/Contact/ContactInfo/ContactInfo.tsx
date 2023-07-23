@@ -3,7 +3,7 @@ import { fontSecondary } from 'fonts';
 
 export const ContactInfo = () => {
   return (
-    <div className='w-full text-dark bg-accent-1 shadow-[0.4rem_0.4rem_var(--accent-2)] p-4 flex flex-col gap-4 items-start justify-start'>
+    <div className='w-full text-dark bg-accent-1 shadow-[0.4rem_0.4rem_var(--accent-2)] p-4 flex flex-col gap-4 min-h-screen items-start justify-start'>
       <h1 className='text-3xl sm:text-4xl font-bold'>My Contact Info</h1>
       <ul
         className={`font-medium flex flex-col gap-3 text-lg sm:text-2xl ${fontSecondary.className}`}
