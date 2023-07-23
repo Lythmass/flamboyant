@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${fontMain.className} bg-light`}>
-        <div className='flex w-full overflow-hidden h-screen items-start justify-between'>
+        <div className='flex w-full overflow-y-auto h-screen items-start justify-between'>
           <NavBarButton />
           <NavBar />
           {children}
