@@ -43,7 +43,7 @@ export const ContactForm = () => {
         register={register}
         errors={errors['message']?.message}
       />
-      <div className='w-full mt-2'>
+      <div className='w-full lg:mt-2'>
         <ContactMeButton>
           <button className='w-full' type='submit'>
             Submit
