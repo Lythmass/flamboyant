@@ -2,7 +2,7 @@ import { About, Contact, Home, Projects, Services } from 'components';
 
 export default function Main() {
   return (
-    <main className='w-full h-screen overflow-x-hidden scroll-smooth'>
+    <main className='w-full h-full overflow-x-hidden scroll-smooth'>
       <Home />
       <About />
       <Projects />
