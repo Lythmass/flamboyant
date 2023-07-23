@@ -7,6 +7,7 @@ export const LinkedinSvg: React.FC<SvgType> = (props) => (
     height={props.height}
     fill='none'
     viewBox='0 0 24 24'
+    className='md:w-10 lg:h-10 w-7 h-7'
   >
     <path
       fill={props.color}

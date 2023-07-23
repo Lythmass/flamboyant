@@ -7,7 +7,7 @@ export const Contact = () => {
       className='w-full relative px-5 2xl:px-32 lg:py-24 py-12 min-h-screen flex flex-col gap-16'
     >
       <SectionTitle title='Contact Me' />
-      <div className='w-full flex gap-8'>
+      <div className='w-full flex gap-8 flex-col-reverse 1330:flex-row'>
         <ContactForm />
         <ContactInfo />
       </div>

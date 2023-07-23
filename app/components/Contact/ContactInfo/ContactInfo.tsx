@@ -4,9 +4,9 @@ import { fontSecondary } from 'fonts';
 export const ContactInfo = () => {
   return (
     <div className='w-full text-dark bg-accent-1 shadow-[0.4rem_0.4rem_var(--accent-2)] p-4 flex flex-col gap-4 items-start justify-start'>
-      <h1 className='text-4xl font-bold'>My Contact Info</h1>
+      <h1 className='text-3xl sm:text-4xl font-bold'>My Contact Info</h1>
       <ul
-        className={`font-medium flex flex-col gap-3 text-2xl ${fontSecondary.className}`}
+        className={`font-medium flex flex-col gap-3 text-lg sm:text-2xl ${fontSecondary.className}`}
       >
         <li>
           <span className='font-semibold text-light'>Number:</span> 577-55-11-71
@@ -20,7 +20,9 @@ export const ContactInfo = () => {
           Georgia
         </li>
       </ul>
-      <p className={`text-xl ${fontSecondary.className} font-medium `}>
+      <p
+        className={`text-base sm:text-xl ${fontSecondary.className} font-medium `}
+      >
         You can contact me on any of the above, or just send me a message!
       </p>
       <Socials />

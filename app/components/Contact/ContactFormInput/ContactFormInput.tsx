@@ -27,7 +27,7 @@ export const ContactFormInput: React.FC<InputType> = (props) => {
         />
       )}
       <p
-        className={`mt-1 h-[0.1rem] text-accent-1 font-bold ${fontSecondary.className}`}
+        className={`mt-1 h-[0.1rem] sm:h-[1.75rem] lg:h-[0.1rem] text-accent-1 font-bold ${fontSecondary.className}`}
       >
         {props.errors}
       </p>

@@ -40,9 +40,11 @@ export const Socials = () => {
     );
   });
   return (
-    <div className='mt-auto w-full gap-3 flex justify-between'>
-      <h1 className='text-3xl w-full font-bold text-light'>My Socials:</h1>
-      <div className='w-full flex gap-7 justify-start items-center'>
+    <div className='mt-auto w-full gap-3 flex-col sm:flex-row sm:flex sm:justify-between'>
+      <h1 className='text-xl sm:text-3xl w-full font-bold text-light'>
+        My Socials:
+      </h1>
+      <div className='w-full mt-1 sm:mt-0 flex gap-7 flex-wrap sm:flex-nowrap justify-start items-center'>
         {displaySocials}
       </div>
     </div>

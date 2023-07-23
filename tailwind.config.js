@@ -13,6 +13,9 @@ module.exports = {
         light: 'var(--light)',
         dark: 'var(--dark)',
       },
+      screens: {
+        1330: '1330px',
+      },
     },
   },
   plugins: [],
