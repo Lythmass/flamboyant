@@ -1,12 +1,17 @@
 'use client';
 import { ContactFormInput, ContactMeButton } from 'components';
 import { useContactForm } from './useContactForm';
+import { motion } from 'framer-motion';
 
 export const ContactForm = () => {
   const { register, handleSubmit, submitHandler, errors, formRef } =
     useContactForm();
   return (
-    <form
+    <motion.form
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.25, delay: 0.25, type: 'spring' }}
       ref={formRef}
       onSubmit={handleSubmit(submitHandler)}
       className='w-full flex flex-col gap-7'
@@ -52,7 +57,7 @@ export const ContactForm = () => {
           </button>
         </ContactMeButton>
       </div>
-    </form>
+    </motion.form>
   );
 };
 
