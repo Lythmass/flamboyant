@@ -3,9 +3,11 @@ import { ContactFormInput, ContactMeButton } from 'components';
 import { useContactForm } from './useContactForm';
 
 export const ContactForm = () => {
-  const { register, handleSubmit, submitHandler, errors } = useContactForm();
+  const { register, handleSubmit, submitHandler, errors, formRef } =
+    useContactForm();
   return (
     <form
+      ref={formRef}
       onSubmit={handleSubmit(submitHandler)}
       className='w-full flex flex-col gap-7'
     >

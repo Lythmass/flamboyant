@@ -1,5 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { FormType } from 'types';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 export const useContactForm = () => {
   const {
@@ -7,9 +9,29 @@ export const useContactForm = () => {
     formState: { errors },
     handleSubmit,
   } = useForm<FormType>({ mode: 'all' });
-
-  const submitHandler = (data: FormType) => {
-    console.log(data);
+  const formRef = useRef<HTMLFormElement>(null);
+  const submitHandler = () => {
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID == undefined
+          ? ''
+          : process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID == undefined
+          ? ''
+          : process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        formRef!.current == null ? '' : formRef.current,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY == undefined
+          ? ''
+          : process.env.NEXT_PUBLIC_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
   };
-  return { register, handleSubmit, submitHandler, errors };
+  return { register, handleSubmit, submitHandler, errors, formRef };
 };
