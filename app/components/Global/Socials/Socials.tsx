@@ -7,25 +7,25 @@ import {
 } from 'components';
 import { SocialsData } from 'data';
 
-export const Socials = () => {
+export const Socials: React.FC<{ iconsColor: string }> = (props) => {
   const displaySocials = SocialsData.map((social) => {
     let svg;
-    const props = { width: 40, height: 40, color: 'var(--light)' };
+    const data = { width: 40, height: 40, color: `var(${props.iconsColor})` };
     switch (social.name) {
       case 'Facebook':
-        svg = <FacebookSvg {...props} />;
+        svg = <FacebookSvg {...data} />;
         break;
       case 'Instagram':
-        svg = <InstagramSvg {...props} />;
+        svg = <InstagramSvg {...data} />;
         break;
       case 'Twitter':
-        svg = <TwitterSvg {...props} />;
+        svg = <TwitterSvg {...data} />;
         break;
       case 'Linkedin':
-        svg = <LinkedinSvg {...props} />;
+        svg = <LinkedinSvg {...data} />;
         break;
       case 'Github':
-        svg = <GithubSvg {...props} />;
+        svg = <GithubSvg {...data} />;
         break;
     }
     return (
@@ -40,13 +40,8 @@ export const Socials = () => {
     );
   });
   return (
-    <div className='mt-auto w-full gap-3 flex-col sm:flex-row sm:flex sm:justify-between'>
-      <h1 className='text-xl sm:text-3xl w-full font-bold text-light'>
-        My Socials:
-      </h1>
-      <div className='w-full mt-1 sm:mt-0 flex gap-7 flex-wrap sm:flex-nowrap justify-start items-center'>
-        {displaySocials}
-      </div>
+    <div className='w-full mt-1 sm:mt-0 flex gap-7 flex-wrap sm:flex-nowrap justify-start items-center'>
+      {displaySocials}
     </div>
   );
 };
