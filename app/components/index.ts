@@ -7,7 +7,13 @@ export {
   HomeExperience,
 } from './Home';
 
-export { ContactMeButton, NavBarButton, SectionTitle, Socials } from './Global';
+export {
+  ContactMeButton,
+  NavBarButton,
+  SectionTitle,
+  Socials,
+  NotificationModal,
+} from './Global';
 
 export {
   HomeSvg,

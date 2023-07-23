@@ -1,11 +1,24 @@
 'use client';
-import { ContactFormInput, ContactMeButton } from 'components';
+import {
+  ContactFormInput,
+  ContactMeButton,
+  NotificationModal,
+} from 'components';
 import { useContactForm } from './useContactForm';
 import { motion } from 'framer-motion';
+import { createPortal } from 'react-dom';
 
 export const ContactForm = () => {
-  const { register, handleSubmit, submitHandler, errors, formRef } =
-    useContactForm();
+  const {
+    register,
+    handleSubmit,
+    submitHandler,
+    errors,
+    formRef,
+    notificationModal,
+    setNotificationModal,
+  } = useContactForm();
+
   return (
     <motion.form
       initial={{ opacity: 0, y: 100 }}
@@ -16,6 +29,14 @@ export const ContactForm = () => {
       onSubmit={handleSubmit(submitHandler)}
       className='w-full flex flex-col gap-7'
     >
+      {notificationModal != '' &&
+        createPortal(
+          <NotificationModal
+            setNotificationModal={setNotificationModal}
+            text={notificationModal}
+          />,
+          document.body,
+        )}
       <div className='flex gap-7 md:gap-4 w-full flex-col md:flex-row'>
         <ContactFormInput
           label='Name'

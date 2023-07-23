@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { FormType } from 'types';
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 export const useContactForm = () => {
   const {
@@ -10,6 +10,7 @@ export const useContactForm = () => {
     handleSubmit,
   } = useForm<FormType>({ mode: 'all' });
   const formRef = useRef<HTMLFormElement>(null);
+  const [notificationModal, setNotificationModal] = useState('');
   const submitHandler = () => {
     emailjs
       .sendForm(
@@ -25,13 +26,21 @@ export const useContactForm = () => {
           : process.env.NEXT_PUBLIC_PUBLIC_KEY,
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          setNotificationModal('Your message has been sent successfully!');
         },
         (error) => {
-          console.log(error.text);
+          setNotificationModal(error.text);
         },
       );
   };
-  return { register, handleSubmit, submitHandler, errors, formRef };
+  return {
+    register,
+    handleSubmit,
+    submitHandler,
+    errors,
+    formRef,
+    notificationModal,
+    setNotificationModal,
+  };
 };
