@@ -34,6 +34,7 @@ export const Socials: React.FC<{ iconsColor: string }> = (props) => {
         key={social.id}
         target='_blank'
         href={social.link}
+        aria-label={social.name}
       >
         {svg}
       </a>
