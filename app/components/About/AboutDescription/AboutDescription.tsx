@@ -1,18 +1,13 @@
-'use client';
 import Image from 'next/image';
 import { fontSecondary } from 'fonts';
-import { AboutDescriptionContactDetails } from 'components';
-import { motion } from 'framer-motion';
+import {
+  AboutDescriptionContactDetails,
+  AboutDescriptionWrapper,
+} from 'components';
 
 export const AboutDescription = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: 0.25, duration: 1.25, type: 'spring' }}
-      className='relative w-full p-3 xl:px-10 xl:py-7 flex flex-col items-center xl:items-stretch xl:flex-row gap-5 xl:gap-10 bg-dark min-h-[18rem] shadow-[0.8rem_0.8rem_var(--accent-1)] '
-    >
+    <AboutDescriptionWrapper>
       <div className='colorful hidden absolute right-2 bottom-2 2xl:right-10 2xl:top-5 w-10 h-10 lg:flex' />
       <Image
         className='xl:w-[18rem] h-[14rem] sm:h-[20rem] lg:h-[25rem] xl:h-auto w-full object-cover'
@@ -35,7 +30,7 @@ export const AboutDescription = () => {
         </p>
         <AboutDescriptionContactDetails />
       </div>
-    </motion.div>
+    </AboutDescriptionWrapper>
   );
 };
 

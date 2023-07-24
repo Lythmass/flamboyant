@@ -5,6 +5,8 @@ export {
   HomeDescription,
   HomeDescriptionTypeAnimation,
   HomeExperience,
+  HomeDescriptionWrapper,
+  HomeExperienceWrapper,
 } from './Home';
 
 export {
@@ -35,6 +37,8 @@ export {
   AboutDescriptionContactDetails,
   AboutExperience,
   AboutExperienceSkills,
+  AboutDescriptionWrapper,
+  AboutExperienceWrapper,
 } from './About';
 
 export {

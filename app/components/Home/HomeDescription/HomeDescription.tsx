@@ -1,18 +1,14 @@
-'use client';
 import { fontSecondary } from 'fonts';
-import { ContactMeButton, HomeDescriptionTypeAnimation } from 'components';
-import { motion } from 'framer-motion';
+import {
+  ContactMeButton,
+  HomeDescriptionTypeAnimation,
+  HomeDescriptionWrapper,
+} from 'components';
 import Link from 'next/link';
 
 export const HomeDescription = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1.25, type: 'spring' }}
-      className='w-full xl:w-[70%] text-dark flex flex-col justify-center items-start gap-3 md:gap-10 '
-    >
+    <HomeDescriptionWrapper>
       <h1
         className={`text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium ${fontSecondary.className}`}
       >
@@ -26,7 +22,7 @@ export const HomeDescription = () => {
       <ContactMeButton>
         <Link href='#contact'>Reach out to me!</Link>
       </ContactMeButton>
-    </motion.div>
+    </HomeDescriptionWrapper>
   );
 };
 
