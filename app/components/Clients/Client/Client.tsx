@@ -4,7 +4,7 @@ import { ClientType } from './ClientType';
 
 export const Client: React.FC<ClientType> = () => {
   return (
-    <div className='w-[60%] m-auto flex flex-col gap-8 items-center border-b-2 border-b-accent-1 p-10'>
+    <div className='w-full lg:w-[60%] m-auto flex flex-col gap-8 items-center border-b-2 border-b-accent-1 p-10'>
       <Image
         className='w-40 h-40 object-cover shadow-[0.4rem_0.4rem_var(--accent-1)]'
         alt='client testimonial'
@@ -13,7 +13,7 @@ export const Client: React.FC<ClientType> = () => {
         height={700}
       />
       <h1
-        className={`${fontSecondary.className} text-2xl text-center text-dark`}
+        className={`${fontSecondary.className} lg:text-2xl text-center text-dark`}
       >
         &quot;
         <i>

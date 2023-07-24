@@ -26,10 +26,10 @@ export const DisplayProjects = () => {
   });
   return (
     <motion.div
-      initial={{ opacity: 1, y: 150 }}
+      initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: 0.1, duration: 1.25, type: 'spring' }}
+      transition={{ delay: 0.25, duration: 1.25, type: 'spring' }}
       className='w-full'
     >
       <Swiper

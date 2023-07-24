@@ -51,7 +51,7 @@ export {
 
 export { Services, DisplayServices, Service, ServiceWrapper } from './Services';
 
-export { Clients, DisplayClients, Client } from './Clients';
+export { Clients, DisplayClients, Client, ClientsDescription } from './Clients';
 
 export {
   Contact,
