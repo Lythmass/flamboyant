@@ -51,6 +51,8 @@ export {
 
 export { Services, DisplayServices, Service, ServiceWrapper } from './Services';
 
+export { Clients, DisplayClients, Client } from './Clients';
+
 export {
   Contact,
   ContactForm,

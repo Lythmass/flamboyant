@@ -1,4 +1,12 @@
-import { About, Contact, Home, Projects, Services, Socials } from 'components';
+import {
+  About,
+  Clients,
+  Contact,
+  Home,
+  Projects,
+  Services,
+  Socials,
+} from 'components';
 import { fontSecondary } from 'fonts';
 
 export default function Main() {
@@ -8,6 +16,7 @@ export default function Main() {
       <About />
       <Projects />
       <Services />
+      <Clients />
       <Contact />
       <footer className='w-full h-[15rem] lg:h-[7rem] lg:px-10 gap-4 flex-col lg:flex-row bg-dark p-7 flex justify-start lg:justify-between items-start lg:items-center'>
         <h1

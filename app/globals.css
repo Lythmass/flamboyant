@@ -265,3 +265,7 @@ colorful:before,
 .swiper-pagination-bullet-active {
    background-color: var(--dark) !important;
  }
+
+.swiper-button-prev, .swiper-button-next {
+   color: var(--dark) !important;
+}
