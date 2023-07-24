@@ -29,6 +29,7 @@ export {
   TwitterSvg,
   GithubSvg,
   LinkedinSvg,
+  ClientsSvg,
 } from './Svgs';
 
 export {

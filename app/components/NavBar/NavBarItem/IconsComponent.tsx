@@ -1,5 +1,6 @@
 import {
   AboutSvg,
+  ClientsSvg,
   ContactSvg,
   HomeSvg,
   ProjectsSvg,
@@ -32,6 +33,11 @@ export const IconsComponent = (props: { icon: string }) => {
     case 'contactsvg':
       iconComponent = (
         <ContactSvg width={60} height={30} color='var(--accent-2)' />
+      );
+      break;
+    case 'clientsvg':
+      iconComponent = (
+        <ClientsSvg width={60} height={30} color='var(--accent-2)' />
       );
       break;
   }

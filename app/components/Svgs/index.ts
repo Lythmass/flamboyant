@@ -9,3 +9,4 @@ export { InstagramSvg } from './InstagramSvg';
 export { TwitterSvg } from './TwitterSvg';
 export { GithubSvg } from './GithubSvg';
 export { LinkedinSvg } from './LinkedinSvg';
+export { ClientsSvg } from './ClientsSvg';

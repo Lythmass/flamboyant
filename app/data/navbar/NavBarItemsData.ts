@@ -25,6 +25,12 @@ export const NavBarItemsData = [
   },
   {
     id: 5,
+    title: 'clients',
+    icon: 'clientsvg',
+    link: 'clients',
+  },
+  {
+    id: 6,
     title: 'contact',
     icon: 'contactsvg',
     link: 'contact',
