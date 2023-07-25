@@ -4,28 +4,18 @@ export const HomeSvg: React.FC<SvgType> = (props) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
+      xmlSpace='preserve'
+      viewBox='0 0 122.88 112.07'
       width={props.width}
       height={props.height}
-      fill='none'
-      viewBox='0 0 24 24'
+      fill={props.color}
     >
       <path
-        stroke={props.color}
-        strokeLinecap='round'
-        strokeWidth={1.5}
-        d='M22 22H2M2 11l4.063-3.25M22 11l-8.126-6.5a3 3 0 0 0-3.748 0l-.782.625M15.5 5.5v-2A.5.5 0 0 1 16 3h2.5a.5.5 0 0 1 .5.5v5M4 22V9.5M20 9.5v4m0 8.5v-4.5'
-      />
-      <path
-        stroke={props.color}
-        strokeLinecap='round'
-        strokeLinejoin='round'
-        strokeWidth={1.5}
-        d='M15 22v-5c0-1.414 0-2.121-.44-2.56C14.122 14 13.415 14 12 14c-1.414 0-2.121 0-2.56.44M9 22v-5'
-      />
-      <path
-        stroke={props.color}
-        strokeWidth={1.5}
-        d='M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z'
+        d='M61.44 0 0 60.18l14.99 7.87L61.04 19.7l46.85 48.36 14.99-7.87L61.44 0zM18.26 69.63 61.5 26.38l43.11 43.25v42.43H73.12V82.09H49.49v29.97H18.26V69.63z'
+        style={{
+          fillRule: 'evenodd',
+          clipRule: 'evenodd',
+        }}
       />
     </svg>
   );

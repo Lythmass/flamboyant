@@ -30,9 +30,6 @@ export const ContactInfo = () => {
       </p>
 
       <div className='mt-auto w-full gap-3 flex-col sm:flex-row sm:flex sm:justify-between'>
-        <h1 className='text-xl sm:text-3xl w-full font-bold text-light'>
-          My Socials:
-        </h1>
         <Socials iconsColor='--light' />
       </div>
     </ContactInfoWrapper>
