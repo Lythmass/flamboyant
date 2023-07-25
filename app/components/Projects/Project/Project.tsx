@@ -18,10 +18,10 @@ export const Project: React.FC<ProjectType> = (props) => {
         />
       </div>
       <Image
-        className='w-full h-1 self-end lg:w-1/2 lg:pl-10 sm:min-h-[31.3rem] object-cover'
+        className='w-full h-[15rem] pb-2 lg:pb-0 self-end lg:w-1/2 lg:pl-10 sm:min-h-[31.3rem] object-cover'
         src={props.image}
         width={1400}
-        height={0}
+        height={700}
         alt={props.title}
       />
     </div>
