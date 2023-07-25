@@ -30,7 +30,7 @@ export const DisplayProjects = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: 0.25, duration: 1.25, type: 'spring' }}
-      className='w-full'
+      className='w-full border-2 border-dark'
     >
       <Swiper
         pagination={{

@@ -8,7 +8,7 @@ export const ProjectsData = [
     startDate: '2020-01-01',
     endDate: '2020-02-05',
     link: '/',
-    image: '/images/luffy.png',
+    image: '/images/project1.jpg',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const ProjectsData = [
     startDate: '2020-01-01',
     endDate: '2020-02-05',
     link: '/',
-    image: '/images/luffy.png',
+    image: '/images/project2.jpg',
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const ProjectsData = [
     startDate: '2020-01-01',
     endDate: '2020-02-05',
     link: '/',
-    image: '/images/luffy.png',
+    image: '/images/project3.jpg',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const ProjectsData = [
     startDate: '2020-01-01',
     endDate: '2020-02-05',
     link: '/',
-    image: '/images/luffy.png',
+    image: '/images/project4.jpg',
   },
   {
     id: 5,
@@ -52,6 +52,6 @@ export const ProjectsData = [
     startDate: '2020-01-01',
     endDate: '2020-02-05',
     link: '/',
-    image: '/images/luffy.png',
+    image: '/images/project5.jpg',
   },
 ];

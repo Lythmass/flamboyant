@@ -1,4 +1,4 @@
-import { AboutExperienceSkillsData } from 'data';
+import { AboutExperienceSkillsData, AboutMeData } from 'data';
 import { fontSecondary } from 'fonts';
 import { AboutExperienceSkills, AboutExperienceWrapper } from 'components';
 import { SkillType } from 'types';
@@ -23,9 +23,7 @@ export const AboutExperience = () => {
         <p
           className={`xl:text-xl text-lg text-light ${fontSecondary.className} font-medium`}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit
-          provident, error incidunt esse facilis suscipit nobis sapiente aperiam
-          odio ad, vel quo optio? Nulla odio autem quaerat voluptatibus qui.
+          {AboutMeData.work}
         </p>
       </div>
       <div className='2xl:min-w-[18rem] flex flex-col gap-4 px-4 py-3 bg-accent-2'>

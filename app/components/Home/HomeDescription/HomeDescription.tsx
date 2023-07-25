@@ -5,6 +5,7 @@ import {
   HomeDescriptionWrapper,
 } from 'components';
 import Link from 'next/link';
+import { HomeDescriptionData } from 'data';
 
 export const HomeDescription = () => {
   return (
@@ -12,7 +13,7 @@ export const HomeDescription = () => {
       <h1
         className={`text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium ${fontSecondary.className}`}
       >
-        Welcome to the world of my flamboyant art!
+        {HomeDescriptionData.title}
       </h1>
       <p
         className={`xl:pr-24 text-lg sm:text-2xl h-4 md:h-auto lg:text-3xl xl:text-5xl min-w-[90vw] md:min-w-[75rem] ${fontSecondary.className}`}
@@ -20,7 +21,7 @@ export const HomeDescription = () => {
         <HomeDescriptionTypeAnimation />
       </p>
       <ContactMeButton>
-        <Link href='#contact'>Reach out to me!</Link>
+        <Link href='#contact'>{HomeDescriptionData.cta}</Link>
       </ContactMeButton>
     </HomeDescriptionWrapper>
   );

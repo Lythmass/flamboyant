@@ -1,4 +1,5 @@
 import { ContactInfoWrapper, Socials } from 'components';
+import { PersonalData } from 'data';
 import { fontSecondary } from 'fonts';
 
 export const ContactInfo = () => {
@@ -9,15 +10,16 @@ export const ContactInfo = () => {
         className={`font-medium flex flex-col gap-3 text-lg sm:text-2xl ${fontSecondary.className}`}
       >
         <li>
-          <span className='font-semibold text-light'>Number:</span> 577-55-11-71
+          <span className='font-semibold text-light'>Number:</span>{' '}
+          {PersonalData.number}
         </li>
         <li>
           <span className='font-semibold text-light'>Email:</span>{' '}
-          lythmass17@gmail.com
+          {PersonalData.email}
         </li>
         <li>
-          <span className='font-semibold text-light'>Location:</span> Tbilisi,
-          Georgia
+          <span className='font-semibold text-light'>Location:</span>{' '}
+          {PersonalData.location}
         </li>
       </ul>
 

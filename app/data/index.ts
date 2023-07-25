@@ -1,7 +1,7 @@
 export { NavBarItemsData } from './navbar';
-export { HomeExperienceData } from './home';
-export { AboutExperienceSkillsData } from './about';
+export { HomeExperienceData, HomeDescriptionData } from './home';
+export { AboutExperienceSkillsData, AboutMeData } from './about';
 export { ProjectsData } from './projects';
 export { ServicesData } from './services';
-export { SocialsData } from './global';
+export { SocialsData, PersonalData } from './global';
 export { ClientsData } from './clients';
