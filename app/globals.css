@@ -10,6 +10,27 @@
   --dark: #393E46;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+   scrollbar-width: auto;
+   scrollbar-color: #393e46 #ffffff;
+ }
+
+ /* Chrome, Edge, and Safari */
+ *::-webkit-scrollbar {
+   width: 11px;
+ }
+
+ *::-webkit-scrollbar-track {
+   background: #ffffff00;
+ }
+
+ *::-webkit-scrollbar-thumb {
+   background-color: #393e46;
+   border-radius: 8px;
+ }
+
 body{
   background: radial-gradient(circle, transparent 25%, #F2E7D5  26%),
   linear-gradient(45deg, transparent 46%, #E3E1D1 47%, #E3E1D1 52%, transparent 53%), 
